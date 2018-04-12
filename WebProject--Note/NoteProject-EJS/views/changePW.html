@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MyNote--修改密码</title>
+    <link href="stylesheets/login.css" rel='stylesheet' type='text/css' />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<div class="app-location">
+    <h1 id="test">MyNote</h1>
+    <div><p id="reminder3"></p></div>
+    <div class="location"><img src="images/mainIcon.png" class="img-responsive" alt="" /></div>
+    <form id="changePWForm" onsubmit="return false" method="post">
+        <input id="oldAccount" name="oldAccount" type="text" class="text" placeholder="帐号" >
+        <input id="oldPassword" name="oldPassword" type="password" placeholder="原密码" >
+        <input id="newPassword" name="newPassword" type="password"  placeholder="新密码">
+        <div class="submit"><input id="changePWButton" type="submit"  value="确定修改" ></div>
+        <div class="clear"></div>
+        <h4><a href="/">不想修改？重新登录</a></h4>
+    </form>
+</div>
+<script src="javascripts/jquery-3.2.1.min.js"></script>
+<script src="javascripts/changePW.js"></script>
+</body>
+</html>

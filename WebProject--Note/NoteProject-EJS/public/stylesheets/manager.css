@@ -1,0 +1,35 @@
+#searchUser{
+    position: absolute;
+    left: 40%;
+    top: 10%;
+    width: 30%;
+}
+
+#choiceUserButton{
+    position: relative;
+    width: 30%;
+    font-size: 20px;
+    font-weight: 300;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+    padding: 10px 10px;
+    border: 3px solid #0bd38a;
+    background: #0bd38a;
+    border-radius: 0.3em;
+    -o-border-radius: 0.3em;
+    -webkit-border-radius: 0.3em;
+    -moz-border-radius: 0.3em;
+}
+
+#deleteUser{
+    position: relative;
+    /*top: -20px;*/
+    left: 15%;
+}
+
+#changePWUser{
+    position: relative;
+    /*top: -20px;*/
+    left: 25%;
+}

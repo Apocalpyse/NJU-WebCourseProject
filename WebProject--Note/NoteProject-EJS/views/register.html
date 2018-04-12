@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MyNote--快速注册</title>
+    <link href="stylesheets/login.css" rel='stylesheet' type='text/css' />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<div class="app-location">
+    <h1>MyNote</h1>
+    <div><p id="reminder2"></p></div>
+    <div class="location"><img src="images/mainIcon.png" class="img-responsive" alt="" /></div>
+    <form id="registerForm" method="post" onsubmit="return false">
+        <input id="newAccount" name="newAccount" type="text" class="text" placeholder="帐号" >
+        <input id="password1" name="password1" type="password" placeholder="输入密码" >
+        <input id="password2" name="password2" type="password" placeholder="再次输入密码" >
+        <div class="submit"><input id="registerButton" type="submit" value="注册" ></div>
+        <h4><a href="/">已有帐号？立刻登录</a></h4>
+        <div class="clear"></div>
+    </form>
+    </div>
+    <script src="javascripts/jquery-3.2.1.min.js"></script>
+    <script src="javascripts/register.js"></script>
+</body>
+</html>

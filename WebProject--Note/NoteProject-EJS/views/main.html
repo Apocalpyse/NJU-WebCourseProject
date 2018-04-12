@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MyNote--我的主页</title>
+
+<link href="stylesheets/bootstrap.css" rel="stylesheet">
+<link rel="stylesheet" href="stylesheets/bootstrap-theme.css">
+<link href="stylesheets/main.css" rel="stylesheet">
+
+
+<!--[if lt IE 9]>
+<script src="javascripts/html5shiv.js"></script>
+<script src="javascripts/respond.min.js"></script>
+<![endif]-->
+
+</head>
+
+<body>
+	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+		<div class="container-fluid">
+			<div class="navbar-header">
+                <a class="navbar-brand" href="/main"><img src="images/miniLogo.png"></img><span id="title">MyNote</span></a>
+				<div id="userIcon"><span class="glyphicon glyphicon-user userIcon"></span><span id="user"></span></div>
+			</div>
+		</div><!-- /.container-fluid -->
+	</nav>
+		
+	<div id="sidebar-collapse" class="col-sm-3 col-lg-2 sidebar">
+		<form role="search">
+			<div class="form-group">
+                <span class="glyphicon glyphicon-search"></span>
+				<input type="text" class="form-control" placeholder="Search">
+			</div>
+		</form>
+		<ul class="nav menu">
+            <li ><a href="/main"><span class="glyphicon glyphicon-book"></span>笔记</a></li>
+            <li ><a id="download"><span class="glyphicon glyphicon-download"></span>下载</a></li>
+			<li><a id="screenshot"><span class="glyphicon glyphicon-screenshot"></span> 截屏</a></li>
+			<li><a href="/changePW"><span class="glyphicon glyphicon-lock"></span> 改密</a></li>
+			<li><a href="/"><span class="glyphicon glyphicon-log-out"></span> 登出</a></li>
+		</ul>
+	</div><!--/.sidebar-->
+
+	<div  class="col-lg-offset-2 col-lg-9 textEdit">
+		<div class="submit dropdown">
+			<button id="noteChoiceButton" class="choiceNote dropdown-toggle" data-toggle="dropdown">选择笔记本</button>
+			<ul class="dropdown-menu noteList" role="menu" aria-labelledby="dropdownMenu1" id="choiceNote">
+				<li role="presentation">
+					<a role="menuitem" tabindex="-1" id="createNote" data-toggle="modal" data-target="#createNoteModal" href="javascript:void(0);">新建笔记本</a>
+				</li>
+				<li role="presentation" class="divider"></li>
+			</ul>
+		</div>
+		<div class="submit dropdown">
+			<button id="pageChoiceButton" class="choicePage dropdown-toggle" data-toggle="dropdown" >选择笔记</button>
+			<ul class="dropdown-menu pageList" role="menu" aria-labelledby="dropdownMenu2" id="choicePage">
+			</ul>
+		</div>
+		<div class="submit"><button id="submitPage" class="submit">保存</button></div>
+			<textarea id="titleTextArea" placeholder="标题"></textarea>
+			<div class="editor"><textarea class="ckeditor" id="mainTextArea" placeholder="内容"></textarea></div>
+	</div>
+
+	<div class="modal fade" id="createNoteModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h4 class="modal-title">新建笔记本</h4>
+				</div>
+				<div class="modal-body"><input type="text" id="inputNoteName" placeholder="输入笔记本名称"></div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+					<button type="button" class="btn btn-primary" id="createNoteButton">确定</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<script src="javascripts/jquery-3.2.1.min.js"></script>
+	<script src="javascripts/bootstrap.min.js"></script>
+	<script src="javascripts/bootstrap-datepicker.js"></script>
+	<script src="javascripts/ckeditor/ckeditor.js"></script>
+	<script src="javascripts/jspdf.js"></script>
+    <script src="javascripts/main.js"></script>
+    <script src="javascripts/screenshotAndDownload.js"></script>
+
+</body>
+
+</html>

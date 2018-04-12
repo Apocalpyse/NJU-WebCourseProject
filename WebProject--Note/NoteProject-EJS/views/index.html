@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>MyNote</title>
+<link href="stylesheets/login.css" rel='stylesheet' type='text/css' />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+</head>
+<body>
+		<div class="app-location">
+            <h1 id="test">MyNote</h1>
+			<div><p id="reminder1"></p></div>
+			<div class="location"><img src="images/mainIcon.png" class="img-responsive" alt="" /></div>
+			<form id="loginForm" onsubmit="return false" method="post">
+				<input id="account" name="account" type="text" class="text" placeholder="帐号" >
+				<input id="password" name="password" type="password" placeholder="密码" >
+				<div class="submit"><input id="loginButton" type="submit"  value="登录" ></div>
+				<div class="clear"></div>
+				<h4><a href="/register">没有帐号？立刻注册</a></h4>
+			</form>
+		</div>
+		<script src="javascripts/jquery-3.2.1.min.js"></script>
+        <script src="javascripts/login.js"></script>
+</body>
+</html>
